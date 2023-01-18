@@ -8,8 +8,12 @@ class Users {
         this.balance = balance
 
     }
-  
+    
+    addMoney(amount:number) {
+        this.balance += amount
+    }
 }
 
 const user1 = new Users ('Eduardo', 10)
+user1.addMoney(100)
 console.log(user1)
